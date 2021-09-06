@@ -1,13 +1,6 @@
 ---
-- name: Install all updates and reboot as many times as needed
-  hosts: all
-  tasks:
-    ansible.windows.win_updates:
-      category_names: "*"
-      reboot: yes
-
 - name: Install all security, critical, and rollup updates without a scheduled task
-  hosts: all
+  hosts: Test Group
   tasks:
     ansible.windows.win_updates:
       category_names:
