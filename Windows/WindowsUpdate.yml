@@ -9,3 +9,4 @@
           - SecurityUpdates
           - CriticalUpdates
           - UpdateRollups
+        reboot: yes
