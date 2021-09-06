@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "ansibleautomation"
+		},
+		{
+			"path": "m365audit"
+		},
+		{
+			"path": "automation"
+		}
+	]
+}
