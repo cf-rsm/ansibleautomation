@@ -1,6 +1,6 @@
 ---
 - name: Windows Update
-  hosts: Test Group
+  hosts: testgroup
 
   tasks:
     - name: Install all security, critical, and rollup updates
