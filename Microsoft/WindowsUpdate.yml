@@ -1,12 +1,52 @@
 ---
-- name: Windows Update
-  hosts: testgroup
+- name: Windows Update - Directory Servers
+  hosts: directoryserversupdates
 
   tasks:
-    - name: Install all security, critical, and rollup updates
-      win_updates:
+    - name: Complete Windows Updates on Directory Servers
+      ansible.windows.win_updates:
         category_names:
           - SecurityUpdates
           - CriticalUpdates
           - UpdateRollups
         reboot: yes
+        reboot_timeout: 600
+
+- name: Windows Update - Application Servers
+  hosts: appserverupdates
+
+  tasks:
+    - name: Complete Windows Updates on Application Servers
+      ansible.windows.win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
+        reboot: yes
+        reboot_timeout: 600
+
+- name: Windows Update - Terminal Servers
+  hosts: terminalserversupdates
+
+  tasks:
+    - name: Complete Windows Updates on Terminal Servers
+      ansible.windows.win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
+        reboot: yes
+        reboot_timeout: 600
+
+- name: Windows Update - General Servers
+  hosts: generalserversupdates
+
+  tasks:
+    - name: Complete Windows Updates on General Servers
+      ansible.windows.win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
+        reboot: yes
+        reboot_timeout: 600
