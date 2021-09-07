@@ -3,5 +3,6 @@
   hosts: all
 
   tasks:
-    - name: Test network connection via ping module to all hosts
-      ping:
+    - name: Test network connection via net_ping module to all hosts
+      net_ping:
+        dest: "{{ ansible_host }}"
