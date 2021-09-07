@@ -5,4 +5,4 @@
   tasks:
     - name: Test network connection via ICMP echo to all hosts
       net_ping:
-        dest: { { inventory_hostname } }
+        dest: "{{ inventory_hostname }}"
