@@ -5,4 +5,4 @@
   tasks:
     - name: Test network connection via ICMP echo to all hosts
       net_ping:
-        dest: { { ansible_facts.eth0.ipv4.address } }
+        dest: { { guest.ipAddress } }
