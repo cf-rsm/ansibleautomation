@@ -1,0 +1,7 @@
+---
+- name: Network Ping Check
+  hosts: all
+
+  tasks:
+    - name: Test network connection via ping module to all hosts
+      ping:
