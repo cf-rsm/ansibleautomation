@@ -3,5 +3,5 @@
   hosts: all
 
   tasks:
-    - name: Test network connection via ICMP echo to all hosts
+    - name: Test network connection via win_ping module to all hosts
       win_ping:
