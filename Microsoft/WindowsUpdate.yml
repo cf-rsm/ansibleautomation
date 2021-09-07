@@ -1,6 +1,6 @@
 ---
 - name: Windows Update - Directory Servers
-  hosts: directoryserversupdates
+  hosts: directoryservers
 
   tasks:
     - name: Complete Windows Updates on Directory Servers
@@ -13,7 +13,7 @@
         reboot_timeout: 600
 
 - name: Windows Update - Application Servers
-  hosts: appserverupdates
+  hosts: appservers
 
   tasks:
     - name: Complete Windows Updates on Application Servers
@@ -26,7 +26,7 @@
         reboot_timeout: 600
 
 - name: Windows Update - Terminal Servers
-  hosts: terminalserversupdates
+  hosts: terminalservers
 
   tasks:
     - name: Complete Windows Updates on Terminal Servers
@@ -39,7 +39,7 @@
         reboot_timeout: 600
 
 - name: Windows Update - General Servers
-  hosts: generalserversupdates
+  hosts: generalservers
 
   tasks:
     - name: Complete Windows Updates on General Servers
