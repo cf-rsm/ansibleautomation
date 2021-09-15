@@ -1,5 +1,5 @@
 ---
-- name: Windows Ping Check.
+- name: Windows Ping Check
   hosts: all
 
   tasks:
