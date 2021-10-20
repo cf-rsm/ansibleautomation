@@ -56,6 +56,10 @@
         state: absent
     
     - name: Remove files from temp folder
+        path: C:\temp\*
+        state: absent
+
+    - name: Empty recycle bin
       ansible.buildin.shell:
         cmd: Clear-RecycleBin -Force
     
